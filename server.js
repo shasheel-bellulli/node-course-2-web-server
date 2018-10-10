@@ -37,6 +37,13 @@ res.render('home.hbs', {
     welcomeMessage: 'welcome to Home page'
 })
 })
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', ({
+        pageTitle: 'Projects Page',    
+        welcomeMessage: 'welcome to Project page'
+    }))
+})
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About Page'        
